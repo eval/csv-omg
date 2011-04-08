@@ -1,5 +1,3 @@
-module Csv
-  module Omg
-    VERSION = "0.0.1"
-  end
+module CsvOmg
+  Version = VERSION = "1.0.0"
 end

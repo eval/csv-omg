@@ -1,0 +1,5 @@
+Price Paid,Stock Symbol,Regulator,Name,City,FDIC Number,Transaction Type,State,Program,Pricing Mechanism,Type of Institution,Total Assets,Date,OTS Number,Description
+2000000000.00,STT,Federal Reserve,"State 
+Street Corporation",Boston,1111435,Purchase,MA,CPP,Par,holding company,276290703000.00,2008-10-28,,Preferred Stock w/Warrants
+25000000000.00,C,Federal Reserve,Citigroup Inc.,New York,1951350,Purchase,NY,CPP,Par,holding company,1306041994000.00,2008-10-28,,Preferred Stock w/Warrants
+25000000000.00,WFC,Federal Reserve,Wells Fargo & Company,San Francisco,1120754,Purchase,CA,CPP,Par,holding company,569241620000.00,2008-10-28,,Preferred Stock w/Warrants
