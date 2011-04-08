@@ -1,3 +1,3 @@
 module CsvOmg
-  Version = VERSION = "1.0.4"
+  Version = VERSION = "1.0.6"
 end
