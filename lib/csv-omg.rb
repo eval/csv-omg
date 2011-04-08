@@ -95,8 +95,8 @@ module CsvOmg
 
     def create_accessor(name)
       unless respond_to?('column_names') && column_names.include?(name)
-        create_getter(name) unless respond_to?(name)
-        create_setter(name) unless respond_to?("#{name}=")
+        create_getter(name) unless instance_method_names.include?("#{name}")
+        create_setter(name) unless instance_method_names.include?("#{name}=")
       end
     end
   end
