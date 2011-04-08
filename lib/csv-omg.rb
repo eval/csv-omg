@@ -1,4 +1,15 @@
-require 'fastercsv'
+# copied from csv-mapper (https://github.com/pillowfactory/csv-mapper)
+if RUBY_VERSION > "1.9"
+ require "csv"
+ unless defined? FCSV
+   class Object
+     FasterCSV = CSV
+     alias_method :FasterCSV, :CSV
+   end
+ end
+else
+ require "fastercsv"
+end
 
 module CsvOmg
   
