@@ -1,4 +1,4 @@
-Overview [!(http://stillmaintained.com/eval/csv-omg.png)](http://stillmaintained.com/eval/csv-omg)
+Overview [![stillmaintained](http://stillmaintained.com/eval/csv-omg.png)](http://stillmaintained.com/eval/csv-omg)
 ========
 
 CsvOmg (formerly known as [csvmapper](https://github.com/thinkcreate/csvmapper)) easily lets you map CSV to objects. Inspired by [happymapper](https://github.com/jnunemaker/happymapper).
