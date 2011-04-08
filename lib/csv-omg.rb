@@ -47,7 +47,7 @@ module CsvOmg
       instances
     end
     
-    def column(attr, *args, &block)
+    def col(attr, *args, &block)
       attr = attr.to_s
       type = args.delete(([String, Float, Integer, Date, DateTime] & args).first) || String
       source = args.first || attr
@@ -95,8 +95,8 @@ module CsvOmg
 
     def create_accessor(name)
       unless respond_to?('column_names') && column_names.include?(name)
-        create_getter(name)
-        create_setter(name)
+        create_getter(name) unless respond_to?(name)
+        create_setter(name) unless respond_to?("#{name}=")
       end
     end
   end

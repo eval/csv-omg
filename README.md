@@ -12,10 +12,10 @@ Examples
       class Product
         include CsvOmg
 
-        column :name,           'product_name'
-        column :uid,            'product_uid',    Integer
-        column :description,    2
-        column(:price_in_cents, 'product_price',  Float){|float| (float * 100).round }
+        col :name,           'product_name'
+        col :uid,            'product_uid',    Integer
+        col :description,    2
+        col(:price_in_cents, 'product_price',  Float){|float| (float * 100).round }
 
       end
     end

@@ -18,7 +18,7 @@ shared_context 'CsvOmg' do
   context 'instances' do
     before{ @instance = @klass.new }
     
-    specify 'have a getter for every column' do
+    specify 'have a getter for every col' do
       @instance_expectations.each do |expectations|
         expectations.each do |name, value|
           @instance.should.respond_to(name.to_s)
@@ -26,7 +26,7 @@ shared_context 'CsvOmg' do
       end
     end
     
-    specify 'have a setter for every column' do
+    specify 'have a setter for every col' do
       @instance_expectations.each do |expectations|
         expectations.each do |name, value|
           @instance.should.respond_to("#{name}=")
@@ -56,10 +56,10 @@ module Shop
   class Product
     include CsvOmg
     
-    column(:category, 'product_category', Integer)
-    column(:created_on, 2, Date)
-    column(:price, 'product_price', Float)
-    column(:naam, 'name'){|name| "Mr. #{name}"}
+    col(:category, 'product_category', Integer)
+    col(:created_on, 2, Date)
+    col(:price, 'product_price', Float)
+    col(:naam, 'name'){|name| "Mr. #{name}"}
   end
 end
 
@@ -96,11 +96,11 @@ class Transaction
   
   # Price Paid,Stock Symbol,Regulator,Name,City,FDIC Number,Transaction Type,State,Program,Pricing Mechanism,Type of Institution,Total Assets,Date,OTS Number,Description
   
-  column :symbol, 'Stock Symbol'
-  column(:price_in_cents, 'Price Paid') {|raw| raw.to_f * 100 rescue 0.0 }
-  column :description, 'Description'
-  column :ots,  'OTS Number'
-  column :fdic, 'FDIC Number', Integer
+  col :symbol, 'Stock Symbol'
+  col(:price_in_cents, 'Price Paid') {|raw| raw.to_f * 100 rescue 0.0 }
+  col :description, 'Description'
+  col :ots,  'OTS Number'
+  col :fdic, 'FDIC Number', Integer
 end
 
 context 'some more csv' do
@@ -149,10 +149,10 @@ class ARProduct < ActiveRecord::Base
   
   attr_protected :name
   
-  column :name
-  column :price, 'product_price', Float
-  column :uid, 'product_uid', Integer
-  column(:created_at, 'product_created', DateTime)
+  col :name
+  col :price, 'product_price', Float
+  col :uid, 'product_uid', Integer
+  col(:created_at, 'product_created', DateTime)
   
 end
 
