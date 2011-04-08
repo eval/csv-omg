@@ -21,11 +21,11 @@ Examples
     end
 
     csv =<<-CSV.gsub(/^ +/,'')
-      product_uid,product_name,product_description,product_price
-      1200,Ham,like you never tasted before,19.99
+      product_uid;product_name;product_description;product_price
+      1200;Ham;like you never tasted before;19.99
     CSV
 
-    p1 = Shop::Product.parse(csv).first
+    p1 = Shop::Product.parse(csv, :col_sep => ';').first
     p1.price_in_cents   # 1999
 
 Requirements
