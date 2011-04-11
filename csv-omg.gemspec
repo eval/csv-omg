@@ -5,7 +5,6 @@ require "csv-omg/version"
 Gem::Specification.new do |s|
   s.name        = "csv-omg"
   s.version     = CsvOmg::Version
-  s.date        = Time.now.strftime('%Y-%m-%d')
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Gert Goet"]
   s.email       = ["gert@thinkcreate.nl"]
