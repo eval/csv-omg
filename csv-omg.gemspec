@@ -24,7 +24,7 @@ desc
   s.add_dependency('fastercsv', '~>1.5.4')
 
   s.add_development_dependency('test-spec', '~>0.10.0')
-  s.add_development_dependency('rr', '~>1.0.2')
+  s.add_development_dependency('test-unit')
   s.add_development_dependency('activerecord', '~>3.0.6')
   s.add_development_dependency('sqlite3', '~>1.3.3')
 end

@@ -1,5 +1,5 @@
-require File.dirname(__FILE__) + '/test_helper'
-
+$LOAD_PATH.unshift File.dirname(__FILE__)
+require 'helper'
 
 shared_context 'CsvOmg' do
   
