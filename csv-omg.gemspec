@@ -6,6 +6,7 @@ Gem::Specification.new do |s|
   s.name        = "csv-omg"
   s.version     = CsvOmg::Version
   s.platform    = Gem::Platform::RUBY
+  s.date        = Time.now.strftime("%Y-%m-%d")
   s.authors     = ["Gert Goet"]
   s.email       = ["gert@thinkcreate.nl"]
   s.homepage    = "http://github.com/eval/csv-omg"
